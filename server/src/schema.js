@@ -1,7 +1,6 @@
 const gql = require('graphql-tag');
 
 const typeDefs = gql`
-  "Query to get tracks array for the homepage grid"
   type Query {
     "Query to get tracks array for the homepage grid"
     tracksForHome: [Track!]!
@@ -22,14 +21,7 @@ const typeDefs = gql`
     id: ID!
     name: String!
     photo: String
-  }
-  
-  "A Module is a single unit of teaching. Multiple Modules compose a Track"
-  type Module {
-    id: ID!
-    title: String!
-    length: Int
-  }    
+  } 
 `
 
 
