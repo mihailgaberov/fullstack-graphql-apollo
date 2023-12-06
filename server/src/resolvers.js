@@ -5,8 +5,10 @@ const resolvers = {
       return dataSources.trackAPI.getTracksForHome()
     }
   },
-  Track: ({ authorId }, _, { dataSources }) => {
-    return dataSources.trackAPI.getAuthor(authorId)
+  Track: {
+    author: ({ authorId }, _, { dataSources }) => {
+      return dataSources.trackAPI.getAuthor(authorId)
+    },
   }
 }
 
