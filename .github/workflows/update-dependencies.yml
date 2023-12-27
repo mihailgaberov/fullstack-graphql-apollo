@@ -22,7 +22,7 @@ on:
 jobs:
   update_deps: # job name
     # Only run this GitHub Action on the original repo, not on forks
-    if: github.repository_owner == 'apollographql'
+    if: github.repository_owner == 'mihailgaberov'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
